@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="websModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="direccionesweb">
+    <Key>
+      <PropertyRef Name="diw_cod" />
+    </Key>
+    <Property Name="diw_cod" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="diw_dir" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="diw_des" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="diw_fec" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="websEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="direccioneswebs" EntityType="Self.direccionesweb" />
+  </EntityContainer>
+</Schema>
